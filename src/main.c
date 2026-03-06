@@ -613,7 +613,7 @@ int main(int argc, char** argv)
         else
         {
             delete_array((void**) objects, object_count);
-            errorf("file '%s' has an unexpected extension. expected '.c', '.s', or '.o' (C source files, assembly files, or object files)");
+            errorf("file '%s' has an unexpected extension. expected '.c', '.s', or '.o' (C source files, assembly files, or object files)\n");
             return clean_exit(EXIT_FAILURE);
         }
         if (obj_filepath == NULL)
